@@ -1,0 +1,162 @@
+/* Global Styling */
+
+body {
+    font-family: "Inter", sans-serif !important;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+:root {
+    --psx-dark: #000000;  
+    --psx-dark-primary: #0C0E12;   
+    --psx-primary: #7F56D9;
+    --psx-secondary: #6366F1;
+    --psx-accent: #06B6D4;
+    /* --psx-dark: #0F172A; */
+    --psx-muted: #64748B;
+    --psx-border: #E2E8F0;
+    --psx-bg: #F8FAFC;
+    --psx-white: #ffffff;
+}
+@font-face {
+    font-family: 'ginkgo-bold';
+    src: url('../fonts/ginkgo-bold.ttf') format('truetype');
+}
+@media only screen and (max-width: 1400px) {
+    .container{
+        min-width: 100% !important;
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+}
+
+
+/* Utility classes */
+
+.text-white {opacity: 0.9 !important;}
+
+.ginko-bold { font-family: 'ginkgo-bold', sans-serif; }
+
+.bg-primary { background-color: var(--psx-dark-primary) !important;}
+.text-primary { color: var(--psx-primary) !important; }
+.bg-dark { background-color: var(--psx-dark) !important; }
+
+.psx-h1 { font-size: 2.75rem; font-weight: 700; line-height: 1.4; }
+.psx-h2 { font-size: 2.25rem; font-weight: 700; line-height: 1.4; }
+.psx-h3 { font-size: 1.75rem; font-weight: 600; line-height: 1.3; }
+.psx-h4 { font-size: 1.25rem; font-weight: 600; }
+.psx-body-lg { font-size: 1.125rem; line-height: 1.75; letter-spacing: 0.3px; font-weight:300; }
+.psx-body { font-size: 1rem; line-height: 1.65; letter-spacing: 0.3px; font-weight: 300; }
+.psx-body-sm { font-size: 0.875rem; line-height: 1.5; letter-spacing: 0.3px; font-weight: 300; }
+
+.psx-btn {
+    display: inline-block;
+    padding: 10px 22px;
+    border-radius: 10px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: 0.2s ease;
+    letter-spacing: 0.3px;
+}
+.psx-btn-primary {
+    background: var(--psx-primary);
+    border:1px solid var(--psx-primary);
+    color: white;
+    border:none;
+}
+.psx-btn-primary:hover,
+.psx-btn-outline:hover { 
+    opacity: 0.8;
+}
+.psx-btn-secondary {
+    background:transparent;
+    border: 1px solid var(--psx-bg);
+    color: var(--psx-bg);
+}
+
+
+/* header css starts from here */
+header {
+    min-height: 60px;
+    position:sticky;
+    top: 16px;
+}
+header .inner-container {
+    backdrop-filter: blur(4px);
+    box-shadow: 0px 0px 20px rgb(255 255 255 / 16%);
+    padding: 12px 16px;
+    border-radius: 10px;
+}
+header nav .logo-wrapper a {
+    color:white;
+    text-decoration: none;
+    position:relative;
+    letter-spacing: 0.8px;
+}
+header nav .logo-wrapper {
+    gap:8px;
+}
+
+/* header css ends here */
+
+
+/* hero section css starts from here */
+#hero-section {
+    background-image: url('../images/background-overlay-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -80px;
+    min-height: calc(100vh + 90px);
+    padding-bottom: 64px;
+    padding-top: 150px; /* spacing between nav and header content becomes 60px */
+}
+#hero-section .col-lg-12 h1 + p {
+    margin-bottom: 24px;
+}
+#hero-section .col-lg-12 img {
+    min-width: 100%;
+    margin-top: 64px;
+    border-radius:10px;
+}
+#hero-section .buttons-wrapper {
+    gap: 12px;
+}
+/* hero section css ends here */
+
+/* how to use section css starts from here */
+#how-to-use {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+#how-to-use .tagline {
+    box-shadow: 0px 1px 2px 0px #0A0D120D;
+    border: 1px solid #373A41;
+    background: #0C0E12;
+    padding: 5px 12px;
+    border-radius: 10px;
+    margin-bottom: 16px;
+}
+#how-to-use .main-heading {
+    margin-bottom: 16px;
+}
+#how-to-use .main-para {
+    max-width: 1050px;
+    margin:auto;
+    margin-bottom: 40px;
+}
+#how-to-use .col-lg-4 .wrapper {
+    gap: 12px;
+}
+#how-to-use .icons-wrapper {
+    box-shadow: 0px 1px 2px 0px #0A0D120D;
+    border: 1px solid #373A41;
+    background: #0C0E12;
+    min-height: 60px;
+    min-width: 60px;
+    border-radius: 100px;
+}
+/* how to use section css ends here */
+main {
+    min-height: 300rem !important;
+}

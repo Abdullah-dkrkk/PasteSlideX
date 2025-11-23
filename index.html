@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PasteSlideX | Homepage</title>
+
+    <!-- bootsrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- google fonts (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!-- css file -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+<body class="bg-dark">
+    
+
+    <!-- navbar -->
+    <header class="d-flex align-items-center justify-content-between">
+        <div class="container inner-container d-flex align-items-center justify-content-between">
+            <nav>
+                <div class="logo-wrapper d-flex align-items-center justify-content-center">
+                    <img src="./assets/images/logo.webp" alt="Logo" height="40" width="40">
+                    <a href="javascript:void(0);" class="ginko-bold psx-body-lg logo-text">PasteSlideX</a>
+                </div>
+            </nav>
+            
+            <div class="offcanvas-wrapper">
+                <button class="psx-btn psx-btn-primary psx-body" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Useful Links</button>
+            </div>
+        </div>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                ...
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <section id="hero-section">
+            <div class="container text-white">
+                <div class="row d-flex align-items-center justify-content-center flex-column">
+                    <div class="col-lg-12 d-flex align-items-start justify-content-center flex-column">
+                        <h1 class="psx-h1 ginko-bold text-capitalize">We create copy-paste sliders that make <br> static sites feel alive</h1>
+                        <p class="psx-body-lg">PasteslideX is a zero-dependency slider engine for HTML websites. Just copy <br> one snippet, paste it in your page, and get a fast, responsive slider without any CSS or JS files to manage.</p>
+                        <div class="buttons-wrapper d-flex">
+                            <a href="javascript:void(0);" class="psx-btn psx-btn-primary psx-body" type="button">Get Slider Now</a>
+                            <a href="#how-to-use" class="psx-btn psx-btn-secondary psx-body" type="button">How to use</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <img src="./assets/images/main-hero-img.png" alt="Main Hero Image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- how to use -->
+        <section id="how-to-use">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 d-flex flex-column align-items-center justify-content-center">
+                        <span class="tagline psx-body-sm text-white">How It works</span>
+                        <h2 class="main-heading psx-h2 text-capitalize ginko-bold text-white text-center">We help you set up your slider in <br> the simplest way possible</h2>
+                        <p class="main-para text-white text-center psx-body">PasteslideX is designed to remove the friction normally found in adding sliders to HTML websites. Our goal is to make sure you never worry about extra files, complicated setups, or confusing configuration steps. Everything is simplified so you can focus on creating smooth visual experiences without slowing down your workflow.</p>
+                    </div>
+                </div>
+                <!-- cards -->
+                <div class="row pt-5">
+                    <!-- first content -->
+                    <div class="col-lg-4 d-flex align-items-center justify-content-center flex-column">
+                        <div class="wrapper d-flex align-items-center justify-content-center flex-column w-100">
+                            <div class="icons-wrapper d-flex align-items-center justify-content-center mb-2">
+                                <img src="./assets/images/icons/heart-icon.png" alt="Heart Icon">
+                            </div>
+                            <h5 class="mb-0 psx-h5 ginko-bold text-capitalize text-white">Get started with a simple structure</h5>
+                            <p class="psx-body mb-0 text-white text-center">You begin by choosing a slider template you like. The HTML you copy is clean, familiar, and intentionally simple, so you can drop it into your page without worrying about setup or compatibility.</p>
+                        </div>
+                    </div>
+                    <!-- second content -->
+                    <div class="col-lg-4 d-flex align-items-center justify-content-center flex-column">
+                        <div class="wrapper d-flex align-items-center justify-content-center flex-column w-100">
+                            <div class="icons-wrapper d-flex align-items-center justify-content-center mb-2">
+                                <img src="./assets/images/icons/refresh-icon.png" alt="Heart Icon">
+                            </div>
+                            <h5 class="mb-0 psx-h5 ginko-bold text-capitalize text-white text-center">Switch modes whenever you need</h5>
+                            <p class="psx-body mb-0 text-white text-center">You can easily move b/w development mode and production mode based on where you are in your process. Dev mode keeps things readable, while prod mode gives you a compact, optimized version.</p>
+                        </div>
+                    </div>
+                    <!-- third content -->
+                    <div class="col-lg-4 d-flex align-items-center justify-content-center flex-column">
+                        <div class="wrapper d-flex align-items-center justify-content-center flex-column w-100">
+                            <div class="icons-wrapper d-flex align-items-center justify-content-center mb-2">
+                                <img src="./assets/images/icons/slash-icon.png" alt="Heart Icon">
+                            </div>
+                            <h5 class="mb-0 psx-h5 ginko-bold text-center text-capitalize text-white">No extra files or complicated steps</h5>
+                            <p class="psx-body mb-0 text-white text-center">There are no external CSS files, JS files, or CDN links to deal with. You simply paste the snippet into your page, and everything works without forcing you through additional steps or restrictions.</p>
+                        </div>
+                    </div>
+                    <!-- fourth content -->
+                    <div class="col-lg-4 d-flex align-items-center justify-content-center flex-column mt-5 pt-2">
+                        <div class="wrapper d-flex align-items-center justify-content-center flex-column w-100">
+                            <div class="icons-wrapper d-flex align-items-center justify-content-center mb-2">
+                                <img src="./assets/images/icons/plus-icon.png" alt="Heart Icon">
+                            </div>
+                            <h5 class="mb-0 psx-h5 ginko-bold text-capitalize text-white">Copy all together or separately</h5>
+                            <p class="psx-body mb-0 text-white text-center">You can copy everything in one click if you prefer a quick setup, or copy the HTML, CSS, and JavaScript separately if you want more control. This gives you flexibility without adding extra effort.</p>
+                        </div>
+                    </div>
+                    <!-- fifth content -->
+                    <div class="col-lg-4 d-flex align-items-center justify-content-center flex-column mt-5 pt-2">
+                        <div class="wrapper d-flex align-items-center justify-content-center flex-column w-100">
+                            <div class="icons-wrapper d-flex align-items-center justify-content-center mb-2">
+                                <img src="./assets/images/icons/credit-card-icon.png" alt="Heart Icon">
+                            </div>
+                            <h5 class="mb-0 psx-h5 ginko-bold text-capitalize text-white text-center">Choose how your slider behaves</h5>
+                            <p class="psx-body mb-0 text-white text-center">You can customize transition timing, autoplay speed, and overall behavior whenever you want. These adjustments take only a moment and help you fine-tune the slider to match your project’s rhythm.</p>
+                        </div>
+                    </div>
+                    <!-- sixth content -->
+                    <div class="col-lg-4 d-flex align-items-center justify-content-center flex-column mt-5 pt-2">
+                        <div class="wrapper d-flex align-items-center justify-content-center flex-column w-100">
+                            <div class="icons-wrapper d-flex align-items-center justify-content-center mb-2">
+                                <img src="./assets/images/icons/email-icon.png" alt="Heart Icon">
+                            </div>
+                            <h5 class="mb-0 psx-h5 ginko-bold text-center text-capitalize text-white">works perfectly the moment it loads</h5>
+                            <p class="psx-body mb-0 text-white text-center">As soon as your snippet is placed into the page, the slider becomes fully responsive and ready to use. There’s nothing else to configure — it loads cleanly and performs smoothly on every screen size.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
